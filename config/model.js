@@ -6,7 +6,7 @@ module.exports = {
   mysql: {
       database: 'todolist',
       user: 'root',
-      password: 'root',
+      password: '123456',
       host: '127.0.0.1'
   }
 };
