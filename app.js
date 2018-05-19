@@ -3,7 +3,6 @@ const app = new Koa();
 const router = require('koa-router')();
 const bodyparser = require('koa-bodyparser');
 const session = require('koa-session2');
-let shelljs = require('shelljs/global');
 
 
 app.use(bodyparser());
@@ -24,4 +23,3 @@ app.use(controller());
 
 app.listen(5000);
 
-exec('docsify serve docs');
