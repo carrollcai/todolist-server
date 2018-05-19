@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 const env = process.env.NODE_ENV ? process.env.NODE_ENV : 'development';
 
 if (env === 'production') {
-  modelConfig = require('../model/model-prod');
+  conf = require('../config/model-prod');
 }
 
 const sequelize = new Sequelize(conf.mysql.database, conf.mysql.user, conf.mysql.password, {
